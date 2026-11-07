@@ -1,0 +1,15 @@
+node_modules/
+bin/
+downloads/
+renders/
+preview/
+reference-source.mp4
+reference-audio.wav
+project/assets/Xbot.glb
+cybertruck-v5-media.zip
+backup-manifest.json
+.env*
+*.key
+*.pem
+*.log
+__pycache__/
