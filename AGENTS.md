@@ -2,7 +2,9 @@
 
 Read README.md for restoration and REVIEW.md for quality limitations. This repository
 preserves the v5 reference reconstruction, its analysis, comparison and MakeHuman builder.
-The full production toolkit is https://github.com/kubilaytinmaz/social-studio.
+The full production toolkit is https://github.com/gokhanurul02-cmd/social-studio.
+The intended GitHub owner is gokhanurul02-cmd. Verify the authenticated account before
+creating repositories or changing ownership.
 
 Default final resolution is 1080x1920. Use short 540p/720p tests and reuse the existing
 analysis. Every frame must remain deterministic through window.renderFrame(frame).

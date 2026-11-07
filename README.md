@@ -11,7 +11,7 @@ npm ci
 npx playwright install chromium
 py install_ffmpeg.py
 gh auth login
-gh release download cybertruck-v5-backup --repo kubilaytinmaz/cybertruck-threejs-study --pattern cybertruck-v5-media.zip --pattern backup-manifest.json
+gh release download cybertruck-v5-backup --repo gokhanurul02-cmd/cybertruck-threejs-study --pattern cybertruck-v5-media.zip --pattern backup-manifest.json
 $backup = Get-Content backup-manifest.json -Raw | ConvertFrom-Json
 $actualHash = (Get-FileHash cybertruck-v5-media.zip -Algorithm SHA256).Hash.ToLowerInvariant()
 if ($actualHash -ne $backup.archive.sha256) { throw 'Yedek paketinin SHA-256 değeri farklı.' }
@@ -32,4 +32,4 @@ node project/render/video.cjs renders/cybertruck-1080p.mp4
 
 `analysis/` referans analizi ve konuşma zamanlamasını, `comparison-v5/` gerçek kare karşılaştırmasını, `assets/makehuman/` mesh üretim kaynaklarını içerir. Varlık kaynakları ve lisanslar `project/ASSETS.md` altında kayıtlıdır. Referans dokuları ve rig bu özel çalışma bağlamında saklanır.
 
-Üretim sistemi, kullanım kılavuzu ve Codex/Claude becerileri [Social Studio](https://github.com/kubilaytinmaz/social-studio) deposunda. Başka bir kodlama asistanına önce bu README, AGENTS.md ve REVIEW.md dosyalarını okut.
+Üretim sistemi, kullanım kılavuzu ve Codex/Claude becerileri [Social Studio](https://github.com/gokhanurul02-cmd/social-studio) deposunda. Başka bir kodlama asistanına önce bu README, AGENTS.md ve REVIEW.md dosyalarını okut.
